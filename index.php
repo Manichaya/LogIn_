@@ -14,22 +14,22 @@
                 <img src="img/login.png" alt="">
             </div><br>
             <h2>Somsri Log in</h2>
-            <form action="#">
+            <form action="check_login.php" method="post">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="text" id="username" required>
+                    <input type="text" name="username" id="username" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" id="password" required>
+                    <input type="password" name="password" id="password" required>
                     <label>password</label>
                 </div>
                 <div class="remember">
                     <label><input type="checkbox">Remember me</label>
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="btn" onclick="getInfo()">Login</button>
+                <button type="submit" class="btn">Login</button>
                 <div class="login-register">
                     <p>Don't have an acccount?<a href="#" class="register-link"> Register</a></p>
                 </div>
